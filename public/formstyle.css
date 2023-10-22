@@ -1,0 +1,233 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*=====================header section===================*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.349);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+}
+
+.box {
+    width: 100vw;
+    display: flex;
+    margin: auto 50px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo a{
+    color: rgb(250, 13, 53);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin-left: 25%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(252, 207, 8);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: rgb(250, 13, 53);
+    transform: scale(1.1);
+    font-size: 17px;
+}
+
+.navbar .btn a {
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+}
+
+.navbar .btn a:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}
+
+#forget{
+    color: white;
+}
+/********************************************/
+#container{
+    width: 100vw;
+    height: 91vh;
+    background-image:url('images/wall1.jpg') ;
+    background-size: cover;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+#RegisterForm, #LoginForm{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(241, 217, 208);
+    border-radius: 10px;
+    border: 2px solid white;
+}
+#container input{
+    width: 60%;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+    color: black;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightyellow;
+    border: 2px solid rgb(1, 1, 70);
+}
+
+#container button{
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px;
+   /* background-color: rgb(1, 1, 70);*/
+    /*color: white;*/
+    font-weight: bold;
+    align-self: flex-start;
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(1, 1, 70);
+}
+
+.ro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 20px;
+}
+.ro label{
+    width: 30%;
+    color: black;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#container hr{
+    width: 100%;
+    color: white;
+    size: 2px;
+    margin: 5px;
+}
+#container h1{
+    width: 100%;
+    background-color: rgb(1, 1, 70);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+
+}
+.screen{
+    margin-top: 10px;
+    min-width: 300px;
+    min-height: 150px;
+    background-color: white;
+    color: black;
+    border: 2px solid red;
+}
+
+/*----------------------footer section-----------------------*/
+.footer{
+    background-image: url('images/wall1.jpg');
+    background-size: cover;
+    width: 100%;
+    color: white;
+    padding: 30px 20px;
+
+}
+.footer .contact {
+    color: white;
+}
+.footer .box3 i{
+    color: black;
+}
+.bottomBar{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    padding: 8px;
+    bottom: 0;
+}
+.time{
+    width: 250px;
+}
+.footer h3{
+    text-decoration: underline;
+    text-decoration-color:rgb(252, 207, 8) ;
+}
+.bottomBar span{
+    color: rgb(250, 13, 53);
+}
+.news p{
+    color: white;
+}
+.news h3 {
+    margin-top: 50px;
+}
+.frm{
+    margin-top: 20px;
+}
+
+.logoo a{
+    color: rgb(250, 13, 53);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.footer input{
+    width: 400px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px;
+    margin-right: 5px;
+}
+.footer button {
+    width: 150px;
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 12px auto;
+    font-weight: bolder;
+    transition: 1s;
+}
+
+.footer button:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}

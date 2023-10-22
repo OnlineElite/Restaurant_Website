@@ -1,0 +1,714 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+/*=====================header section===================*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.349);
+    position: relative;
+    z-index: 10;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    margin: auto 50px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo a{
+    color: rgb(250, 13, 53);
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    margin-left: 25%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: rgb(252, 207, 8);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    color: rgb(250, 13, 53);
+    transform: scale(1.1);
+    font-size: 17px;
+}
+
+.navbar .btn a {
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+}
+
+.navbar .btn a:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 3px;
+}
+#userPhoto{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#userIndex{
+    color: rgb(250, 13, 53);
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: bold;
+}
+#userName{
+    width: fit-content;
+    height: fit-content;
+    padding-inline: 5px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*=====================slider section===================*/
+#slider {
+    background-image: url('images/wall1.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+}
+#forget{
+    color: rgb(252, 207, 8);
+}
+.carousel-inner .row{
+    margin: auto 30px;
+}
+
+#slider .img img {
+    margin: 100px 50px;
+    width: 300px;
+    height: 400px;
+}
+
+.descrip {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+}
+.descrip p{
+    color: white;
+    width: 300px;
+}
+.descrip span{
+    color: rgb(247, 18, 56);
+    font-weight: bold;
+}
+.descrip button {
+    width: 160px;
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-weight: bolder;
+}
+
+.descrip button:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}
+
+.descrip h1 {
+    color: rgb(252, 207, 8);
+    font-size: 50px;
+}
+/*=====================about restaurant section===================*/
+.about {
+    margin-top: 90vh;
+}
+
+.dis img {
+    border-radius: 100%;
+    width: 70px;
+    height: 70px;
+}
+
+.dis {
+    display: flex;
+}
+
+.dis .name {
+    margin-left: 15px;
+}
+
+.row h1 {
+    width: 350px;
+}
+
+.title span {
+    color: rgb(250, 13, 53);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.title h1 {
+    color: black;
+    font-weight: bolder;
+}
+
+.name span,
+p {
+    color: rgb(70, 69, 69);
+    width: 500px;
+}
+
+/*-------------------RestoPhoto section---*/
+.Restphoto {
+    position: relative;
+    margin-top: 50px;
+}
+/****************Effect section***************/
+.Restphoto .effect{
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(233, 66, 94);
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: 1s all ease-in-out;
+
+}
+.Restphoto:hover .effect{
+   display: flex;  
+}
+.Restphoto .effect p{
+    width: 250px;
+    color: white;
+    text-align: center;
+}
+.Restphoto .effect h1{
+    width: 250px;
+    color: white;
+    text-align: center;
+}
+.Restphoto .effect button {
+    width: fit-content;
+    background-color: white;
+    color:black;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.8s;
+    padding: 2px;
+    z-index: 101;
+}
+.Restphoto .effect button:hover {
+    
+    background-color: red;
+    transform: scale(1.1);
+    border: none;
+    color: white;
+    padding: 3px;
+    border:2px solid white;
+}
+/********************************/
+.Restphoto img {
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8%;
+}
+
+.Restphoto .cadr {
+    width: 286px;
+    height: 384px;
+    margin-top: 20px;
+    border: 2px solid yellow;
+    border-radius: 8%;
+    position: absolute;
+    top: 9px;
+    left: 7px;
+}
+
+.Restphoto .cadr button {
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+    left: 8px;
+    border: none;
+    border-radius: 30px;
+    background-color: yellow;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.8s;
+    padding: 2px;
+}
+
+/*-------------------Menu section-------------*/
+.menus {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(214, 230, 238);
+}
+
+.menus .last {
+    padding-bottom: 50px;
+}
+
+.plat {
+    background-color: white;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    position: relative;
+    margin-top: 15px;
+    box-shadow: 0 5px 8px 0 black, 0 7px 20px 0 gray;
+    width: 300px;
+}
+
+.plat img {
+    width: 150px;
+    height: 150px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+.info h3 {
+    color: black;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.info .price {
+    color: rgb(250, 13, 53);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.info i {
+    color: rgb(252, 227, 0);
+
+}
+
+.menus h1 {
+    color: black;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+
+.menus hr {
+    background-color: rgb(252, 207, 8);
+    width: 300px;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(252, 235, 0);
+}
+
+.table h2 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+.number {
+    background-color: rgb(250, 13, 53);
+    color: white;
+    width: 90%;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+
+.line .period {
+    float: right;
+}
+
+.number h4 {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(252, 207, 8);
+}
+
+.number p {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.table .day,
+.period {
+    font-weight: bold;
+}
+
+/*----------------------Services section---------------*/
+.services {
+    margin-top: 50px;
+}
+
+.services .row .outside {
+    background: none;
+    border: 3px solid rgb(252, 207, 8);
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .row .icon {
+    background: rgb(252, 207, 8);
+    width: 95%;
+    height: 95%;
+    border-radius: 100%;
+}
+
+.serv {
+    margin-top: 10px;
+}
+
+.services .serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serv p {
+    text-align: center;
+    width: 90%;
+}
+
+.serv h5:hover {
+    color: rgb(250, 13, 53);
+}
+
+.serv i {
+    color: black;
+    font-size: 40px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*=====================Best Sell section===================*/
+.bestSel {
+    background-color: rgb(214, 230, 238);
+}
+
+.bestSel .title {
+    margin-top: 40px;
+}
+
+.bestSel .title h1 {
+    width: 100%;
+}
+
+.bestSel .box1 {
+    background-color: rgb(250, 13, 53);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.bestSel .box2 {
+    border: 4px solid rgb(252, 207, 8);
+    border-radius: 15px;
+    padding: 30px 50px;
+    width: 650px;
+}
+
+.box1 .optio {
+    background-color: white;
+    border-radius: 12px;
+    margin: 5px;
+    padding: 10px;
+}
+.box1 .optio:hover i{
+    color: red;
+}
+
+.box1 .optio i {
+    color: rgb(153, 149, 149);
+    font-size: 12px;
+}
+
+.box1 .optio span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box1 .optio:hover {
+    background-color: rgb(252, 207, 8);
+}
+
+.bestSel .row {
+    margin: 20px auto;
+    padding-bottom: 30px;
+}
+
+.box2 h3 {
+    font-weight: bolder;
+}
+
+.box2 .lins {
+    display: flex;
+}
+
+.box2 p {
+    width: fit-content;
+    font-weight: bolder;
+}
+
+.box2 .line1 {
+    margin-right: 150px;
+}
+
+.lins i {
+    font-size: 20px;
+    color: rgb(84, 139, 21);
+    font-weight: bold;
+}
+
+.box2 .price {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px auto;
+    color: black;
+}
+
+.dolar {
+    color: rgb(250, 13, 53);
+}
+
+.box2 .oldPrice {
+    text-decoration: line-through;
+    color: rgb(83, 82, 82);
+}
+
+.box2 button {
+    width: 100px;
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 4px;
+    margin: 12px auto;
+    font-weight: bolder;
+    transition: 1s;
+}
+
+.box2 button:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}
+
+/*------------------Reservation & footer section-----------------*/
+.reservation h1 {
+    width: 500px;
+}
+
+.reservation .row {
+    margin: 40px auto;
+}
+
+.reservation i {
+    font-size: 22px;
+    color: black;
+}
+
+.cerc {
+    background-color: rgb(252, 207, 8);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.inf {
+    width: 200px;
+}
+
+.conta {
+    display: flex;
+    margin: 6px auto;
+    padding: 5px;
+}
+
+.inf p {
+    margin-bottom: 4px;
+}
+
+.nameServ {
+    color: rgb(250, 13, 53);
+    font-size: 16px;
+}
+
+.contact {
+    color: black;
+    font-size: 18px;
+}
+
+.box4 input {
+    margin: 10px auto;
+    padding: 3px;
+    font-size: 18px;
+    color: black;
+    border-radius: 6px;
+}
+
+#inp1 {
+    width: 650px;
+}
+
+.forty input {
+    width: 318px;
+    margin-right: 10px;
+}
+
+.reservation button {
+    width: 150px;
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 12px auto;
+    font-weight: bolder;
+    transition: 1s;
+}
+
+.reservation button:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}
+/*----------------------footer section-----------------------*/
+.footer{
+    background-image: url('images/wall1.jpg');
+    background-size: cover;
+    width: 100%;
+    color: white;
+    padding: 30px 20px;
+}
+.footer .contact {
+    color: white;
+}
+.footer .box3 i{
+    color: black;
+}
+.bottomBar{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    padding: 8px;
+    bottom: 0;
+}
+.time{
+    width: 250px;
+}
+.footer h3{
+    text-decoration: underline;
+    text-decoration-color:rgb(252, 207, 8) ;
+}
+.bottomBar span{
+    color: rgb(250, 13, 53);
+}
+.news p{
+    color: white;
+}
+.news h3 {
+    margin-top: 50px;
+}
+.frm{
+    margin-top: 20px;
+}
+
+.logoo a{
+    color: rgb(250, 13, 53);
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+.footer input{
+    width: 400px;
+    background-color: transparent;
+    border-radius: 6px;
+    border: 2px solid white;
+    color: white;
+    padding: 3px;
+    margin-right: 5px;
+}
+.footer button {
+    width: 150px;
+    background-color: rgb(250, 13, 53);
+    color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 12px auto;
+    font-weight: bolder;
+    transition: 1s;
+}
+
+.footer button:hover {
+    transform: scale(1.1);
+    background-color: rgb(252, 207, 8);
+    color: black;
+}

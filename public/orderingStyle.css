@@ -1,0 +1,425 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+/*----------------container section------------------------*/
+.continer {
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 100%;
+}
+/*----------------menu section------------------------*/
+.menu {
+    background-color:rgb(34, 47, 62);
+    border-right: 2px solid white;
+}
+
+.brand-logo {
+    padding: 0 30px;
+}
+
+.brand-logo a {
+    color: rgb(250, 3, 65);
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.brand-logo img {
+    width: 60px;
+    height: 60px;
+}
+
+.menu-item a {
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px 0;
+    font-weight: bold;
+    color: rgb(255, 217, 0);
+}
+
+.menu-item{
+    width: 100%;
+}
+.btnClose, .btnSave{
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border:2px solid white;
+    padding: 5px;
+}
+.btnSave{
+    background-color: rgb(250, 3, 65);
+}
+.menu-item .btn{
+    background-color: rgb(250, 3, 65);
+    color: white;
+    width: 95%;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    border:2px solid white;
+    margin-left: 5px;
+}
+.menu-item .btn:hover , .btnClose:hover, .btnSave:hover{
+    background-color: rgb(255, 217, 0);
+}
+
+.menu-item a:hover {
+    background-color: rgb(250, 3, 65);
+
+}
+
+/*----------modal---------*/
+.modal h3{
+    width: 100%;
+    text-align: center;
+    color:rgb(250, 3, 65) ;
+}
+.modal-content{
+    background-color: rgb(255, 217, 0);
+    border-radius: 8px;
+}
+.modal-body{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.modal-body .roo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+.modal-body .roo label{
+    width: fit-content;
+    color: rgb(34, 47, 62);
+    font-size: 18px;
+    font-weight: bold;
+}
+.modal-body .roo input{
+    background-color: rgb(34, 47, 62);
+    width: 80%;
+    font-size: 18px;
+    color: white ;
+    border-radius: 8px;
+padding: 5px;
+}
+/*----------------food-content section------------------------*/
+.food-content{
+    background-color: rgb(34, 47, 62);
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 1px 10px 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color:rgb(34, 47, 62);
+    border-bottom: 2px solid white;
+}
+
+.your-address {
+    border: 1px solid indianred;
+    color: indianred;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 170px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+.add-box i {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.util i, .user i{
+    font-size: 16px;
+    margin: 0 16px;
+    border: 1px solid crimson;
+    padding: 8px 16px;
+    color: crimson;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.food-items{
+    
+}
+
+.util i:active, .user i:active {
+    color: white;
+    background-color: crimson;
+}
+/*--------------------------food item section------------------*/
+#Burger,
+#platter,
+#chicken,
+#salad,
+#pizza,
+#kingsBurger {
+    margin-top: 40px;
+}
+
+#platter #item-card,
+#salad #item-card {
+    background-color: rgb(128, 253, 18);
+}
+
+#pizza #item-card,
+#kingsBurger #item-card {
+    background-color: rgb(221, 243, 243);
+}
+
+#category-name,
+.item-menu {
+    margin: 10px;
+    font-size: 35px;
+    color:chartreuse/* coral*/;
+}
+
+#item-card {
+    width: 170px;
+    height: 220px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: rgb(253, 221, 226);
+    cursor: pointer;
+    transition-timing-function: 0.5s all ease-in-out;
+}
+
+#rating {
+    padding: 7px;
+    color: gold;
+    background-color: black;
+    font-size: 14px;
+    border-radius: 14px;
+}
+
+.fa-heart {
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.toggle-heart {
+    background-color: orangered;
+    color: white;
+}
+
+#card-top {
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+
+#item-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+#item-card img:hover {
+    transform: scale(1.2);
+}
+
+#item-name {
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategrey;
+    font-size: 18px;
+}
+
+#item-price {
+    margin: 0;
+    color: rgb(2, 27, 27);
+    font-weight: 500;
+    font-size: 18px;
+}
+/*----------------cart section------------------------*/
+.cart{
+    background-color: rgb(34, 47, 62);
+    border-left: 2px solid white;
+    padding-right: 8px;
+    padding-left: 8px;
+    overflow: scroll;
+}
+.test-header{
+    padding-top: 12px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0; 
+}
+.test-header .user{
+    border-bottom: 2px solid white;
+    padding-bottom: 15px;
+}
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
+    color:indianred ;
+    background:transparent;
+}
+.border{
+    width: 165px;
+    height: 4px;
+    margin: 3px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background-color: coral;
+}
+.list-card{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor:pointer;
+    transition: 0.3 all ease-in-out;
+}
+.list-card:hover{
+    background:rgb(255, 217, 0);
+}
+
+.list-card:hover img{
+     transition: 0.5s all ease-in-out;
+     transform: scale(1.3);
+}
+
+.list-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.list-name{
+    font-size: 20px;
+    margin: 0 10px;
+    text-transform: capitalize;
+    color: yellow/*rgb(94,43,43)*/;
+    text-decoration: none;
+}
+/*-------------------Order section------------*/
+#category{
+    display: none;        
+}
+.cart-toggle{
+    display: none; 
+}
+#cart-page{
+    background-color:white ;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color:indianred;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+#m-total-amount{
+    display: none;
+}
+#cart-page table tbody td{
+    padding: 10px 0;
+    font-size: 20px;
+}
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size:16px;
+    background: none;
+    background:lightcoral;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding:3px 8px;
+}
+#cart-page table tbody td img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px; 
+}
+#checkout{
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background: white;
+
+}
+#checkout p{
+    margin: 15px 0;
+    float: left;
+
+}
+#total-price, #total-item{
+    font-size: 25px;
+    color: indianred;
+}
+.cart-btn{
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform:uppercase ;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.cart-btn:active{
+    color: crimson;
+    background: none;
+    border: 1px solid crimson;
+}
+#delievery{
+    font-size: 20px;
+    color: limegreen;
+
+}
